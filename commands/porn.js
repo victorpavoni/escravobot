@@ -1,12 +1,15 @@
 const execute = (bot, msg, args) => {
-  const porns = ['https://discord.com/channels/697862611328303114/756209115209924749/785979405624672318']
+  var porns = [
+    'https://cdn.boob.bot/boobs/80007AE8.gif'
+  ]
   const porn = Math.floor(Math.random() * porns.length)
-
   if(msg.content.split(' ')[1] == undefined)
     msg.channel.send(porns[porn])
   else {
     porns.push(`${msg.content.split(' ')[1]}`)
   }
+  console.log(`Array = ${porns} 
+  Index = ${porn}`);
 
 }
 
