@@ -1,5 +1,6 @@
 module.exports = async client => {
-  console.log(`Bot iniciado em ${client.guilds.size} servidores.`);
-  client.user.setGame(`Chutando o saco do pedrinho | !help`);
-
+  setInterval(() => {
+    console.log(`Bot iniciado.`)
+    client.user.setActivity(`Chutando o saco do pedrinho | !help`, {type: 'WATCHING'})
+  }, 60 * 1000)
 }
