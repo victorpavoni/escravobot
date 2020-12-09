@@ -1,13 +1,11 @@
 const Discord = require('discord.js');
 
 const execute = (bot, msg, args) => {
-  const attachment = new Discord.MessageAttachment('https://i.imgur.com/8C3s3rP.gif')
-
   const embed = new Discord.MessageEmbed()
   .setTitle(`*Configuracao do server*`)
   .setDescription(`Siga o tutorial abaixo para configurar o bot corretamente.`)
   .setColor("#f2f2f2")
-  .setImage(attachment)
+  .setImage('https://i.imgur.com/8C3s3rP.gif')
   .setFooter('**Para mais comandos digite** ```*help```')
 
   msg.channel.send(embed)
