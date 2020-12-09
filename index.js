@@ -26,7 +26,8 @@ for (var filename of commandFiles) {
   client.commands.set(command.name, command)
 }
 
-client.on('message', msg => {
+client.on('message', message => {
+  let msg = message.toLowerCase()
   if(!msg.content.startsWith(process.env.BOT_PREFIX)) return
 
   const args = msg.content.slice(process.env.BOT_PREFIX.length).split(' ')
