@@ -1,5 +1,5 @@
 const execute = async (bot, msg, args) => {
-  const dado = Math.floor(Math.random() * 55) + 1
+  const dado = Math.floor(Math.random() * 25) + 1
   const ms = await msg.channel.send("Jogando...")
 
 
@@ -13,6 +13,6 @@ const execute = async (bot, msg, args) => {
 
 module.exports = {
   name: "dado",
-  help: "Ao jogar o dado você pode tirar um numero entre 0 e 55 ```*dado```",
+  help: "Ao jogar o dado você pode tirar um numero entre 0 e 25 ```*dado```",
   execute
 }
