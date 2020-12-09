@@ -1,6 +1,6 @@
 const execute = async (bot, msg, args) => {
   const dado = Math.floor(Math.random() * 55) + 1
-  const ms = await msg.reply("Jogando...")
+  const ms = await msg.channel.send("Jogando...")
   console.log(dado);
     if(30 < dado)
       ms.edit(`Catapimbas! Você tirou ${dado}`)
