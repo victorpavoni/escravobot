@@ -21,7 +21,7 @@ const execute = async (bot, msg, args) => {
 
   const embed = new MessageEmbed()
     .setTitle(`${msg.author.username}`)
-    .setThumbnail(msg.author.displayAvatarURL())
+    .setThumbnail(msg.author.displayAvatarURL({size: 4096, dynamic: true}))
     .setDescription(`✔️ Sucesso ao deletar ${qtd} mensagens`)
     .setFooter(msg.author.username, msg.author.displayAvatarURL())
     .setColor('#f2f2f2')
