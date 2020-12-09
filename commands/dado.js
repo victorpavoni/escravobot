@@ -3,7 +3,7 @@ const execute = async (bot, msg, args) => {
   const ms = await msg.channel.send("Jogando...")
 
 
-    if(30 < dado)
+    if(20 < dado)
       ms.edit(`Catapimbas! Você tirou ${dado}`)
     else if(10 < dado)
       ms.edit(`Parabéns! Você tirou ${dado}`)
