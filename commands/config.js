@@ -1,7 +1,7 @@
-const { MessageAttachment, MessageEmbed } = require('discord.js');
+const Discord = require('discord.js');
 
 const execute = (bot, msg, args) => {
-  const attachment = new MessageAttachment('https://i.imgur.com/8C3s3rP.gif')
+  const attachment = new Discord.MessageAttachment('https://i.imgur.com/8C3s3rP.gif')
 
   const embed = new Discord.MessageEmbed()
   .setTitle(`*Configuracao do server*`)
