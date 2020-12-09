@@ -1,7 +1,7 @@
 const execute = async (bot, msg, args) => {
   const dado = Math.floor(Math.random() * 55) + 1
   const ms = await msg.reply("Jogando...")
-
+  console.log(dado);
   switch (dado) {
     case 30 < dado:
       ms.edit(`Catapimbas! Você tirou ${dado}`)
