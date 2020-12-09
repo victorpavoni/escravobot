@@ -12,6 +12,7 @@ const execute = async (bot, msg, args) => {
 
 module.exports = {
   name: "dado",
-  help: "Ao jogar o dado você pode tirar um numero entre 0 e 25 ```*dado```",
+  help: "Ao jogar o dado você pode tirar um numero entre 0 e 25.",
+  usage: "*dado",
   execute
 }

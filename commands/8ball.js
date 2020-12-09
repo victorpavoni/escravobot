@@ -16,6 +16,7 @@ const execute = async (bot, msg, args) => {
 
 module.exports = {
   name: "8ball",
-  help: "Responde sua pergunta com sim ou não. ```*8ball [msg]```",
+  help: "Responde sua pergunta com sim ou não.",
+  usage: "*8ball [msg]",
   execute
 }

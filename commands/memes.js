@@ -42,14 +42,12 @@ const execute = (bot, msg, args) => {
     'https://cdn.discordapp.com/attachments/756209115209924749/784848094344249344/sons.mp4',
     'https://cdn.discordapp.com/attachments/756209115209924749/784848095938609162/picosa.mp4',
     'https://cdn.discordapp.com/attachments/756209115209924749/784848114208997407/vou_dancar.mp4',
+    'https://cdn.discordapp.com/attachments/756209115209924749/784847936755597332/negoney.mp4'
     'https://cdn.discordapp.com/attachments/756209115209924749/784848120307253278/ui_disgraca.mp4',
     'https://cdn.discordapp.com/attachments/756209115209924749/784848123183759430/WhatsApp_Video_2020-06-08_at_18.49.32.mp4',
-    'https://cdn.discordapp.com/attachments/756209115209924749/784848132814274590/180px-George_Floyd.png',
     'https://cdn.discordapp.com/attachments/756209115209924749/784848135470055454/456ec22a-60e2-4cd8-9859-c1c448447749.png',
     'https://cdn.discordapp.com/attachments/756209115209924749/784848139759648768/Ej-outuXYAY92xQ.png',
     'https://cdn.discordapp.com/attachments/756209115209924749/784848140427722832/81786590_865494437232679_4660003512125729577_n.png',
-    'https://cdn.discordapp.com/attachments/756209115209924749/784848143912665118/TNvaNBeNNRW58o4_ktljDf3hBnTl63_iPE1jOuKlDdY.png',
-    'https://cdn.discordapp.com/attachments/756209115209924749/784847936755597332/negoney.mp4'
   ]
   const meme = Math.floor(Math.random() * memes.length)
   msg.channel.send(memes[meme])
@@ -59,6 +57,7 @@ const execute = (bot, msg, args) => {
 
 module.exports = {
   name: "memes",
-  help: "Mostra um meme aleatoriamente engraçado. ```*memes``` ",
+  help: "Mostra um meme aleatoriamente engraçado.",
+  usage: "*memes",
   execute
 }

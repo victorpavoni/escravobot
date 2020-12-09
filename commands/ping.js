@@ -6,6 +6,7 @@ const execute = async (bot, msg, args) => {
 
 module.exports = {
   name: "ping",
-  help: "Mostra o ping do usuario ```*ping```",
+  help: "Mostra o ping do usuario.",
+  usage: "*ping",
   execute
 }

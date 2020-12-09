@@ -18,6 +18,7 @@ const execute = (bot, msg, args) => {
 
 module.exports = {
   name: "kick",
-  help: "Expulsa um usuario ```*kick @usuario [motivo]```",
+  help: "Expulsa um usuario.",
+  usage: "*kick @usuario [motivo]",
   execute
 }

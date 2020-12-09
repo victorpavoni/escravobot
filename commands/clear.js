@@ -31,6 +31,7 @@ const execute = async (bot, msg, args) => {
 
 module.exports = {
   name: "clear",
-  help: "Este comando irá excluir o tanto de mensagem que você desejar. ```*clear [qtd]```",
+  help: "Este comando irá excluir o tanto de mensagem que você desejar.",
+  usage: "*clear [qtd]",
   execute
 }
