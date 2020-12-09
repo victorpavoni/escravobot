@@ -1,5 +1,5 @@
 const execute = (bot, msg, args) => {
-  msg.channel.send(msg.member.author.displayAvatarURL())
+  msg.channel.send(msg.author.displayAvatarURL())
 }
 
 module.exports = {
