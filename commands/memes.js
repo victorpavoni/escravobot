@@ -42,7 +42,7 @@ const execute = (bot, msg, args) => {
     'https://cdn.discordapp.com/attachments/756209115209924749/784848094344249344/sons.mp4',
     'https://cdn.discordapp.com/attachments/756209115209924749/784848095938609162/picosa.mp4',
     'https://cdn.discordapp.com/attachments/756209115209924749/784848114208997407/vou_dancar.mp4',
-    'https://cdn.discordapp.com/attachments/756209115209924749/784847936755597332/negoney.mp4'
+    'https://cdn.discordapp.com/attachments/756209115209924749/784847936755597332/negoney.mp4',
     'https://cdn.discordapp.com/attachments/756209115209924749/784848120307253278/ui_disgraca.mp4',
     'https://cdn.discordapp.com/attachments/756209115209924749/784848123183759430/WhatsApp_Video_2020-06-08_at_18.49.32.mp4',
     'https://cdn.discordapp.com/attachments/756209115209924749/784848135470055454/456ec22a-60e2-4cd8-9859-c1c448447749.png',
