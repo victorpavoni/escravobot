@@ -1,25 +1,30 @@
 const execute = async (bot, msg, args) => {
-  if (!msg.guild.me.hasPermission("MANAGE_MESSAGES")) 
-    return msg.reply("⚠️ Comando apenas para admins!");
+
+  // Verification
+  if (!args[0]) return message.channel.send(`Por favor, escreva um numero entre 1 e 100`)
+
+  if (!msg.guild.me.hasPermission("MANAGE_MESSAGES")) return msg.reply("⚠️ Comando apenas para admins!");
 
   let qtd = parseInt(args[0]) + 1
-  if(qtd > 70)  msg.reply("⚠️ Você não pode excluir mais de 70 mensagens!")
 
-    let apagadas = qtd - 1
-  
-    let clear = async () => {
-        try {
-        msg.delete()
-        const fetched = await msg.channel.fetchMessages({limit: qtd})
-        msg.channel.bulkDelete(fetched)
-        msg.reply(`✔️ ${apagadas} Mensagens apagadas.`)
-        } catch(e) {
-          console.log(e);
-            return msg.reply("🤔 Algo de errado não está certo!")
-        }
-    }
-    clear();
-  
+  // function
+
+  if (parseInt(args[0]) > 100 ) {
+    qtd = 100;
+  } else {
+    qtd = parseInt(args[0]);
+  }
+
+  await msg.channel.bulkDelete(qtd, true);
+
+  const embed = new MessageEmbed()
+    .setTitle(`${msg.author.username}`)
+    .setThumbnail(msg.author.displayAvatarURL())
+    .setDescription(`✔️ Sucesso ao deletar ${qtd} mensagens`)
+    .setFooter(msg.author.username, msg.author.displayAvatarURL())
+    .setColor('#f2f2f2')
+  await msg.channel.send(embed)
+
 }
 
 module.exports = {
