@@ -1,3 +1,5 @@
+const { MessageEmbed } = require('discord.js')
+
 const execute = async (bot, msg, args) => {
 
   // Verification
