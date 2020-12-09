@@ -59,6 +59,6 @@ const execute = (bot, msg, args) => {
 
 module.exports = {
   name: "memes",
-  help: "Mostra um meme aleatoriamente engracado",
+  help: "Mostra um meme aleatoriamente engraçado. ```*memes``` ",
   execute
 }

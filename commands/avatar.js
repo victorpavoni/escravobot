@@ -24,6 +24,6 @@ const execute = (bot, msg, args) => {
 
 module.exports = {
   name: "avatar",
-  help: "Mostra a foto do autor da mensagem",
+  help: "Mostra a foto do autor da mensagem ```*avatar @user```",
   execute
 }
