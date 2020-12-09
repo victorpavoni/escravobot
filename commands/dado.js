@@ -1,9 +1,6 @@
-const execute = (bot, msg, args) => {
+const execute = async (bot, msg, args) => {
   const dado = Math.floor(Math.random() * 55) + 1
-
-  setTimeout(() => {
-    const ms = msg.reply("Jogando...")
-  }, 2000);
+  const ms = await msg.reply("Jogando...")
 
   switch (dado) {
     case 30 < dado:
