@@ -15,6 +15,6 @@ const execute = (bot, msg, args) => {
 
 module.exports = {
   name: "porn",
-  help: "Mostra um porno aleatoriamente e adiciona com o comando ```*porn [linkdoporn]```",
+  help: "Mostra um porno aleatoriamente e adiciona com o comando ```*porn [linkdoporn]``` **Em manutenção**",
   execute
 }

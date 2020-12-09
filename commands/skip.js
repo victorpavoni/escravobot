@@ -12,6 +12,6 @@ const execute = (bot, msg, args) => {
 
 module.exports = {
   name: "s",
-  help: "Pula para a próxima música",
+  help: "Pula para a próxima música **Em manutenção**",
   execute,
 };

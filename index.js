@@ -29,9 +29,7 @@ client.on('message', msg => {
 
   try {
     client.commands.get(command).execute(client, msg, args)
-  } catch (err) {
-    return msg.reply("Nao me xicotei mas eu n sei q comando eh esse 😣")
-  }
+  } catch (err) {}
 })
 
 client.login(process.env.BOT_TOKEN) 

@@ -60,7 +60,7 @@ const playSong = async (bot, msg, song) => {
 
 module.exports = {
   name: "p",
-  help: "Reproduz a música desejada no canal atual do usuário",
+  help: "Reproduz a música desejada no canal atual do usuário **Em manutenção**",
   execute,
   playSong,
 };
