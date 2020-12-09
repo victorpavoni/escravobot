@@ -1,9 +1,7 @@
 const execute = (bot, msg, args) => {
   const dado = Math.floor(Math.random() * 55) + 1
+  const ms = await msg.channel.send("Jogando...")
 
-  setTimeout(() => {
-    const ms = msg.channel.send("Jogando...")
-  }, 2000);
 
     if(30 < dado)
       ms.edit(`Catapimbas! Você tirou ${dado}`)
