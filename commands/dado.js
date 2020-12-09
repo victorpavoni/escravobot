@@ -4,7 +4,7 @@ const execute = async (bot, msg, args) => {
   console.log(dado);
     if(30 < dado)
       ms.edit(`Catapimbas! Você tirou ${dado}`)
-    else if( 10 < dado)
+    else if(10 < dado)
       ms.edit(`Parabéns! Você tirou ${dado}`)
     else(10 > dado)
       ms.edit(`KKKKKKKK SE FODEU! Você tirou ${dado}`)
