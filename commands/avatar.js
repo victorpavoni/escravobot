@@ -3,12 +3,12 @@ const Discord = require("discord.js");
 const execute = (bot, msg, args) => {
   let user;
   
-  if (message.mentions.users.first()) {
-    user = message.mentions.users.first();
+  if (msg.mentions.users.first()) {
+    user = msg.mentions.users.first();
   } else if (args[0]) {
-    user = message.guild.members.cache.get(args[0]).user;
+    user = msg.guild.members.cache.get(args[0]).user;
   } else {
-    user = message.author;
+    user = msg.author;
   }
   
   let avatar = user.displayAvatarURL({size: 4096, dynamic: true});
@@ -22,7 +22,7 @@ const execute = (bot, msg, args) => {
   .setColor(0x1d1d1d)
   .setImage(avatar)
   
-  return message.channel.send(embed);
+  return msg.channel.send(embed);
 }
 
 module.exports = {
