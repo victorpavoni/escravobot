@@ -32,4 +32,4 @@ client.on('message', msg => {
   } catch (err) {}
 })
 
-client.login(process.env.BOT_TOKEN) 
+client.login(process.env.BOT_TOKEN_TEST) 
