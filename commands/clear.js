@@ -1,6 +1,6 @@
 const execute = async (bot, msg, args) => {
-  if (!message.guild.me.hasPermission("MANAGE_MESSAGES")) 
-    return message.reply("⚠️ Comando apenas para admins!");
+  if (!msg.guild.me.hasPermission("MANAGE_MESSAGES")) 
+    return msg.reply("⚠️ Comando apenas para admins!");
 
   let qtd = parseInt(args[0]) + 1
   if(qtd > 70)  msg.reply("⚠️ Você não pode excluir mais de 70 mensagens!")
