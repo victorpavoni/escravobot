@@ -1,6 +1,12 @@
 module.exports = async client => {
   setInterval(() => {
-    console.log(`Bot iniciado.`)
-    client.user.setActivity(`Chutando o saco do pedrinho | !help`, {type: 'WATCHING'})
+    console.log(`Logged in as ${client.user.tag}.`)
+    client.user.setPresence({
+      status: "online",
+      game: {
+          name: "Usando *help",
+          type: "STREAMING" //PLAYING: WATCHING: LISTENING: STREAMING:
+      }
+    })
   }, 60 * 1000)
 }
