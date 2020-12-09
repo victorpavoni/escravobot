@@ -16,7 +16,7 @@ const execute = (bot, msg, args) => {
   const embed = new Discord.MessageEmbed()
   .setTitle(`${user.tag} avatar`)
   .setDescription(`[URL do AVATAR de **${user.tag}**](${avatar})`)
-  .setColor(0x1d1d1d)
+  .setColor("#f2f2f2")
   .setImage(avatar)
   
   return msg.channel.send(embed);

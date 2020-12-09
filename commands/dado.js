@@ -1,7 +1,10 @@
 const execute = async (bot, msg, args) => {
   const dado = Math.floor(Math.random() * 55) + 1
-  const ms = await msg.channel.send("Jogando...")
-  console.log(dado);
+
+  setTimeout(() => {
+    const ms = await msg.channel.send("Jogando...")
+  }, 2000);
+  
     if(30 < dado)
       ms.edit(`Catapimbas! Você tirou ${dado}`)
     else if(10 < dado)
