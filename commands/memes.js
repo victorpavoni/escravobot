@@ -52,12 +52,8 @@ const execute = (bot, msg, args) => {
     'https://cdn.discordapp.com/attachments/756209115209924749/784847936755597332/negoney.mp4'
   ]
   const meme = Math.floor(Math.random() * memes.length)
+  msg.channel.send(memes[meme])
 
-  if(msg.content.split(' ')[1] == undefined)
-    msg.channel.send(memes[meme])
-  else {
-    memes.push(`${msg.content.split(' ')[1]}`)
-  }
 
 }
 
