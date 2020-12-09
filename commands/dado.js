@@ -1,4 +1,4 @@
-const execute = (bot, msg, args) => {
+const execute = async (bot, msg, args) => {
   const dado = Math.floor(Math.random() * 55) + 1
   const ms = await msg.channel.send("Jogando...")
 
