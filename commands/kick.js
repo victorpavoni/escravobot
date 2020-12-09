@@ -9,8 +9,8 @@ const execute = (bot, msg, args) => {
 
   member
   .kick(args[2])
-  .then(() => msg.reply(`✅ Usuario @${user.tag} foi expulso com sucesso.`))
-  .catch(err => "❌ Não foi possivel expulsar este membro.")
+  .then(() => msg.reply(`✔️ Usuario @${user.tag} foi expulso com sucesso.`))
+  .catch(err => "⚠️ Não foi possivel expulsar este membro.")
 
   // colocar hierarquia
 
