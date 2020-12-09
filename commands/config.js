@@ -1,8 +1,9 @@
 const { MessageAttachment } = require('discord.js');
 
 const execute = (bot, msg, args) => {
-  const attachment = new MessageAttachment('../img/config.gif')
+  const attachment = new MessageAttachment('https://i.imgur.com/8C3s3rP.gif')
   msg.channel.send(attachment)
+  msg.channel.send("**Para mais comandos digite** ```*help```")
 }
 
 module.exports = {
