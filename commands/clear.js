@@ -14,6 +14,7 @@ const execute = async (bot, msg, args) => {
         msg.channel.bulkDelete(fetched)
         msg.reply(`✔️ ${apagadas} Mensagens apagadas.`)
         } catch(e) {
+          console.log(e);
             return msg.reply("🤔 Algo de errado não está certo!")
         }
     }
