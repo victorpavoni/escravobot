@@ -6,7 +6,7 @@ const execute = async (bot, msg, args) => {
     'Não.'
   ]
 
-  let resposta = Math.floor(Math.random() * resposta.length)
+  let resposta = Math.floor(Math.random() * respostas.length)
 
   const delay = (msec) => new Promise((resolve) => setTimeout(resolve, msec));
 
